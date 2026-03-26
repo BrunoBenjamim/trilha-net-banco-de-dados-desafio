@@ -17,6 +17,7 @@ SELECT
     Nome,
     Ano,
     Duracao
+FROM Filmes
 WHERE Nome = 'De Volta para o Futuro';
 
 -- Exercício 04 --
@@ -24,6 +25,7 @@ SELECT
     Nome,
     Ano,
     Duracao
+FROM Filmes
 WHERE Ano = 1997;
 
 -- Exercício 05 --
@@ -31,6 +33,7 @@ SELECT
     Nome,
     Ano,
     Duracao
+FROM Filmes
 WHERE Ano > 2000;
 
 -- Exercício 06 --
@@ -38,8 +41,9 @@ SELECT
     Nome,
     Ano,
     Duracao
+FROM Filmes
+WHERE Duracao > 100 AND Duracao < 150
 ORDER BY Duracao
-WHERE Duracao > 100 AND Duracao < 150;
 
 -- Exercício 07 --
 SELECT 
@@ -63,8 +67,8 @@ SELECT
     UltimoNome,
     Genero
 FROM Atores
-ORDER BY PrimeiroNome
-WHERE Genero = 'F';
+WHERE Genero = 'F'
+ORDER BY PrimeiroNome;
 
 -- Exercício 10 --
 SELECT 
